@@ -2,9 +2,10 @@
 
 ## Quick Start
 
-1. Open Jupyter: `jupyter notebook ML_Analysis.ipynb`
-2. Run all cells: **Cell → Run All**
-3. Done! (5-10 minutes)
+1. Install Dependencies: `pip install numpy pandas matplotlib seaborn scikit-learn scipy jupyter`
+2. Open Jupyter: `jupyter notebook ML_Analysis.ipynb`
+3. Run all cells: **Cell → Run All**
+4. Done! (5-10 minutes)
 
 ## Files
 
