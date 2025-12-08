@@ -1,36 +1,79 @@
-# Machine Learning Analysis
+# Machine Learning Analysis – Product Sales
 
-## Quick Start
+A complete data mining workflow including:
 
-1. Install Dependencies: `pip install numpy pandas matplotlib seaborn scikit-learn scipy jupyter`
-2. Open Jupyter: `jupyter notebook ML_Analysis.ipynb`
-3. Run all cells: **Cell → Run All**
-4. Done! (3-5mins)
+- Data preprocessing  
+- K-means clustering  
+- Linear & polynomial regression  
+- Visualizations & actionable insights
 
-or
+---
 
-1. Open DATAMINING folder in VSCODE
-2. Open up ML_Analysis.ipynb
-3. (if needed) Install Dependencies: `pip install numpy pandas matplotlib seaborn scikit-learn scipy jupyter`
-4. Click Run all
-5. Done! (3-5mins)
+# 🚀 Quick Start (Automatic)
 
-## Files
+Run the setup script (macOS / Linux / Windows supported):
 
-- `ML_Analysis.ipynb` - Main analysis notebook
-- `product_sales.csv` - Dataset
-- `preprocessing.py` - Data cleaning
-- `kmeans.py` - K-means clustering
-- `regression.py` - Profit prediction
-- `visualization.py` - Charts
+```bash
+python3 setup.py
+```
 
-## Output
+This will:
 
-Data preprocessing (missing values, outliers, normalization)
+- Create a virtual environment  
+- Install all dependencies from `requirements.txt`  
+- Launch Jupyter Notebook automatically  
 
-K-means clustering with 3 optimal clusters
+---
 
-Linear & polynomial regression models
+# 🧠 Manual Setup (Optional)
 
-Visualizations and business insights
-   - Actionable insights
+### 1. Create & activate a virtual environment
+```bash
+python3 -m venv venv
+source venv/bin/activate   # macOS/Linux
+venv\Scripts\activate      # Windows
+```
+
+### 2. Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Launch the notebook
+```bash
+jupyter notebook ML_Analysis.ipynb
+```
+
+---
+
+# 📁 Project Structure
+
+```
+datamining/
+│
+├── ML_Analysis.ipynb      # Main notebook
+├── product_sales.csv      # Dataset
+│
+├── preprocessing.py       # Data preprocessing utilities
+├── kmeans.py              # Clustering logic
+├── regression.py          # Regression models
+├── visualization.py       # Charts & plotting helpers
+│
+├── requirements.txt
+└── setup.py               # Automatic installer
+```
+
+---
+
+# 📊 Output
+
+- Cleaned dataset (missing values, outliers handled)
+- Normalized features
+- K-means clustering with optimal K chosen via elbow method
+- Regression models (linear + polynomial)
+- Matplotlib & Seaborn visualizations
+- Business insights:
+  - Revenue clusters
+  - Profit trends
+  - Actionable recommendations
+
